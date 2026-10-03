@@ -1,0 +1,681 @@
+/* =========================================
+   GENERAL STYLING
+========================================= */
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #101010;
+
+    color: #f5f5f5;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: #151515;
+
+    border-bottom: 1px solid #303030;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: color 0.2s;
+}
+
+
+.nav-links a:hover {
+
+    color: #d6a85f;
+}
+
+
+
+/* =========================================
+   HERO / HOME
+========================================= */
+
+.hero {
+
+    min-height: 85vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 70px 10%;
+}
+
+
+.hero-text {
+
+    max-width: 620px;
+}
+
+
+.small-title {
+
+    color: #999999;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 span {
+
+    color: #d6a85f;
+}
+
+
+.hero h2 {
+
+    color: #cccccc;
+
+    font-size: 24px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-text > p {
+
+    color: #b8b8b8;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.hero-image img {
+
+    width: 310px;
+
+    height: 310px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #303030;
+}
+
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.button {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #d6a85f;
+
+    color: #101010;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: background-color 0.2s;
+}
+
+
+.button:hover {
+
+    background-color: #ffffff;
+}
+
+
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.section {
+
+    padding: 80px 10%;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+
+.section-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 50px;
+
+    height: 3px;
+
+    background-color: #d6a85f;
+
+    margin: 12px auto;
+}
+
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+.card {
+
+    background-color: #181818;
+
+    padding: 30px;
+
+    border: 1px solid #303030;
+
+    border-radius: 10px;
+}
+
+
+.card h3 {
+
+    font-size: 23px;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+
+.card h4 {
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+.card p {
+
+    color: #b8b8b8;
+
+    margin-bottom: 15px;
+}
+
+
+.highlight {
+
+    color: #d6a85f !important;
+}
+
+
+
+/* =========================================
+   EDUCATION & SKILLS
+========================================= */
+
+.education-section {
+
+    background-color: #151515;
+}
+
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+
+/* Skills */
+
+.skills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.skills span {
+
+    background-color: #292929;
+
+    color: #dddddd;
+
+    padding: 8px 14px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================
+   INTERESTS
+========================================= */
+
+.interest-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.interest-card {
+
+    background-color: #181818;
+
+    border: 1px solid #303030;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s;
+}
+
+
+.interest-card:hover {
+
+    transform: translateY(-5px);
+}
+
+
+
+/* Two images inside each interest card */
+
+.interest-images {
+
+    display: flex;
+
+    gap: 4px;
+}
+
+
+.interest-images img {
+
+    width: 50%;
+
+    height: 210px;
+
+    object-fit: cover;
+}
+
+
+
+/* Interest text */
+
+.interest-content {
+
+    padding: 25px;
+}
+
+
+.interest-content h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.interest-content p {
+
+    color: #aaaaaa;
+
+    font-size: 15px;
+}
+
+
+
+/* Technology card */
+
+.technology-card {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.technology-icon {
+
+    height: 210px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #222222;
+
+    font-size: 65px;
+}
+
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+
+    text-align: center;
+
+    padding: 80px 10%;
+
+    background-color: #151515;
+}
+
+
+.contact-section > p {
+
+    color: #aaaaaa;
+
+    margin-bottom: 25px;
+}
+
+
+.contact-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.contact-links a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: 1px solid #555555;
+
+    padding: 10px 25px;
+
+    border-radius: 5px;
+
+    transition: all 0.2s;
+}
+
+
+.contact-links a:hover {
+
+    background-color: #ffffff;
+
+    color: #101010;
+}
+
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #0b0b0b;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding-top: 50px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 50px;
+    }
+
+
+    .hero-image img {
+
+        width: 240px;
+
+        height: 240px;
+    }
+
+
+    .about-grid,
+    .info-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .interest-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 5%;
+    }
+
+
+    .nav-links {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .nav-links a {
+
+        font-size: 14px;
+    }
+
+
+    .hero {
+
+        padding: 50px 7%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+
+    .hero h2 {
+
+        font-size: 20px;
+    }
+
+
+    .hero-text > p {
+
+        font-size: 16px;
+    }
+
+
+    .hero-image img {
+
+        width: 210px;
+
+        height: 210px;
+    }
+
+
+    .section {
+
+        padding: 60px 7%;
+    }
+
+
+    .section-title {
+
+        font-size: 30px;
+    }
+
+
+    .interest-images img {
+
+        height: 180px;
+    }
+
+
+    .contact-links {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
