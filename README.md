@@ -17,4 +17,4 @@ A responsive personal profile webpage created using **HTML and CSS**.
 - CSS Grid
 
 ### Hosting
-To be hosted using **GitHub Pages**.
+Hosted using **GitHub Pages**.
